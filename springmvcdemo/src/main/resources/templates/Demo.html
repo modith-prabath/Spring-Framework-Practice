@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+
+  <h1>Taking input to pass to controller !</h1>
+
+  <form action = "/register" method="post">
+  <label for="fname">First Name:</label>
+  <input type="text"  name="fname" placeholder="First Name">
+
+  <label for="lname">Last Name:</label>
+  <input type="text"  name="lname" placeholder="Last Name">
+
+  <label for="email">Email:</label>
+  <input type="text"  name="email" placeholder="Email">
+
+  <label for="phone">Phone:</label>
+  <input type="text"  name="phone" placeholder="Phone">
+
+  <select name="country">
+    <option value="">Select Country</option>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+    <option value="Canada">Canada</option>
+  </select>
+  <br>
+  <button type="submit" >Submit</button>
+
+</form>
+
+<form action = "/display" method="post">
+  <h1>If already registered user then Click below button</h1>
+  <button type="submit" name="Submit">Submit</button>
+</form> 
+  
+</body>
+</html>
